@@ -43,8 +43,8 @@ pipeline{
         }
         stage('Run'){
             steps{
-                bat 'cd C:\\inetpub\\wwwroot\\Ethereals\\Ethereals.exe'
-                bat 'cd C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe -localhost:5001/swagger'
+                bat 'C:\\inetpub\\wwwroot\\Ethereals\\Ethereals.exe'
+                bat 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe -localhost:5001/swagger'
             }
         }
         stage('Version'){
