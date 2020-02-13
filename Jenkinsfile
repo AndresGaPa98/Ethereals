@@ -38,7 +38,7 @@ pipeline{
         }
         stage('Publish'){
             steps{
-                bat 'dotnet publish --framework netcoreapp1.1'
+                bat 'dotnet publish --framework netcoreapp3.0'
             }
         }
         stage('Version'){
