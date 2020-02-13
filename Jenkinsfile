@@ -41,6 +41,12 @@ pipeline{
                 bat 'dotnet publish -o C:\\inetpub\\wwwroot\\Ethereals'
             }
         }
+        stage('Run'){
+            steps{
+                bat 'cd C:\\inetpub\\wwwroot\\Ethereals\\Ethereals.exe'
+                bat 'cd C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe -localhost:5001/swagger'
+            }
+        }
         stage('Version'){
             steps{
                     echo 'The version is:'
