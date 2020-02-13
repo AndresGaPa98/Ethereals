@@ -38,7 +38,7 @@ pipeline{
         }
         stage('Publish'){
             steps{
-                bat 'dotnet publish -o C:\\inetpub\\wwwroot'
+                bat 'dotnet publish -o C:\\inetpub\\wwwroot\\Ethereals'
             }
         }
         stage('Version'){
