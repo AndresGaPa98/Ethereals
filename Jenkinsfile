@@ -38,7 +38,7 @@ pipeline{
         }
         stage('Publish'){
             steps{
-                bat 'dotnet publish'
+                bat 'dotnet publish Ethereals.Test.csproj --framework netcoreapp1.1'
             }
         }
         stage('Version'){
