@@ -38,7 +38,7 @@ pipeline{
         }
         stage('Publish'){
             steps{
-                bat 'dotnet publish'
+                bat 'dotnet publish --manifest C:\inetpub\wwwroot'
             }
         }
         stage('Version'){
