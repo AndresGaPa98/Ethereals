@@ -43,7 +43,7 @@ pipeline{
         }
         stage('Run'){
             steps{
-                bat 'C:\\inetpub\\wwwroot\\Ethereals\\Ethereals.exe'
+                
                 bat 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe -localhost:5001/swagger'
             }
         }
