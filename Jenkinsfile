@@ -42,9 +42,7 @@ pipeline{
             }
         }
         stage('Run'){
-           tools {
-               Windows_Exe "cmd"
-            }   
+             
             steps{
                 bat 'C:\\inetpub\\wwwroot\\Ethereals\\Ethereals.exe'
             }
