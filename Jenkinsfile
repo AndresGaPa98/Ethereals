@@ -41,6 +41,14 @@ pipeline{
                 bat 'dotnet publish -o C:\\inetpub\\wwwroot\\Ethereals'
             }
         }
+        stage('Run'){
+           tools {
+               Windows Exe "cmd"
+            }   
+            steps{
+                bat 'C:\\inetpub\\wwwroot\\Ethereals\\Ethereals.exe'
+            }
+        }
         
         stage('Version'){
             steps{
