@@ -29,10 +29,13 @@ pipeline{
         stage('Unit Test'){
                steps{
                       echo 'Changing folder...'
-                      bat 'cd Ethereals.Test'
-                      echo 'Running Unit Test'
-                      bat 'dotnet test'
-                      echo '----------------------------------------------------------------------------------'
+                        dir(Ethereals.Test){
+                                     echo 'Running Unit Test'
+                                        bat 'dotnet test'
+                                         echo '----------------------------------------------------------------------------------'
+                                    }
+                      
+                      
                       
                }
         }
