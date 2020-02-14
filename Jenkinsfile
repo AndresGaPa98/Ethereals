@@ -29,7 +29,7 @@ pipeline{
         stage('Unit Test'){
                steps{
                       echo 'Changing folder...'
-                        dir("C:\Program Files (x86)\Jenkins\workspace\Pipeline-Ethereals\Ethereals.Test"){
+                        dir("C:\\Program Files (x86)\\Jenkins\\workspace\\Pipeline-Ethereals\\Ethereals.Test"){
                                      echo 'Running Unit Test'
                                         bat 'dotnet test'
                                          echo '----------------------------------------------------------------------------------'
