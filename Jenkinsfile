@@ -56,7 +56,7 @@ pipeline{
                     echo 'The version is:'
                     bat "dotnet --version"
                     echo '-------------------------------------------------------------------------------------'
-                    bat 'start chrome localhost'
+                dir("start chrome localhost"){}
             
             }
         }
