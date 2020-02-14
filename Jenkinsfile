@@ -42,8 +42,11 @@ pipeline{
         stage('Publish'){
             steps{
                 bat 'dotnet publish -o C:\\inetpub\\wwwroot\\Ethereals'
-                bat 'cd C:/inetpub/wwwroot'
+                dir(C:\\inetpub\\wwwroot\\Ethereals){
+                
                 bat 'Del web.config'
+                }
+                
             }
         }
         
